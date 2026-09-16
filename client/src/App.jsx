@@ -1,5 +1,5 @@
 import React,{useEffect,useMemo,useState}from'react';
-const API='http://localhost:4000/api';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
 function Field({label,name,value,onChange,required=false,type='text'}){return <label className="field"><span>{label}{required&&<b> *</b>}</span><input name={name} type={type} value={value} onChange={onChange} required={required}/></label>}
 function Registration(){
  const [form,setForm]=useState({playerName:'',fatherName:'',age:'',contactNumber:'',email:'',address:'',clubName:'',jerseyNumber:''});
