@@ -1,0 +1,5 @@
+{
+  "name":"all-korangi-football-league","private":true,"version":"2.0.0",
+  "scripts":{"install-all":"npm install && npm --prefix client install && npm --prefix server install","dev":"concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\""},
+  "devDependencies":{"concurrently":"^9.1.0"}
+}
